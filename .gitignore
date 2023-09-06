@@ -1,2 +1,2 @@
-src/gifs/**
+src/gifs/**.gif
 rclone.conf
