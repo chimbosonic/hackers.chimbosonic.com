@@ -1,7 +1,10 @@
 projectname=hackers
 
-upload:
-	rclone -P --config ./rclone.conf copy src/. r2:${projectname}
+build:
+	dx build --release --platform web
+
+upload: build
+	rclone -P --config ./rclone.conf copy dist/. r2:${projectname}
 
 fetch-config:
 	echo "[r2]" > rclone.conf
