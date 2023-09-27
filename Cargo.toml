@@ -1,0 +1,15 @@
+[package]
+name = "gifs-site"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dioxus = "0.4.0"
+dioxus-web = "0.4.0"
+fuzzy-matcher = "0.3.7"
+itertools = "0.11.0"
+reqwest = { version = "0.11.20", features = ["json"] }
+rust-fuzzy-search = "0.1.1"
+serde = "1.0.188"

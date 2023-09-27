@@ -1,0 +1,47 @@
+body {
+    background-color: #000000;
+  }
+  #gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 600px) {
+    #gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  #gallery img {
+    width: 100%;
+    height: auto;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .pagination button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+
+  h1 {
+    color: #00FF00;
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+  }
